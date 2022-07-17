@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #F3F4F7;
+}
+h1, h2, h3, h4, h5, h6, button {
+    font-family: 'Abril Fatface', serif;
+}
+body, input {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: white;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: #000;
+}
+
+.input_section > form > .input {
+    margin: 16px 0;
+}
+
+.input_section > form > button {
+    background-color: #000;
+    color: white;
+    border: 1px solid black;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.input_section > form > button:hover {
+    background-color: #fff;
+    border: 1px solid black;
+    color: black;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: 0;
+    background-color: #f4f5f6;
+}
+
+
+.input_section > form > .input > label {
+    color: #000;
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: #000;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search_section {
+    margin: 16px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    max-width: 700px;    
+}
+
+.search_section > h2 {
+    color: #000;
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 0.2fr;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section > form > input {
+    padding: 5px;
+    border: 0;
+    background: #f4f5f6;
+}
+
+.search_section > form > button {
+    background-color: #000;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    transition: 0.5s;
+}
+.search_section > form > button:hover {
+    background-color: #fff;
+    border: 1px solid black;
+    color: black;
+}
+
+.book_shelf {
+    margin: 16px auto 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 700px;
+}
+
+.book_shelf > h2 {
+    color: #000;
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid #d5d6d7;
+    margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.action {
+    margin-top: 20px;
+}
+
+.action > button {
+    padding: 5px 15px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+
+.action > .black {
+    background-color: #000;
+    color: white;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.action > .black:hover { 
+    background-color: #fff;
+    border: 1px solid black;
+    color: black;
+}
+
+.action > .grey {
+    background-color: #f1f2f3;
+    color: black;
+    border: 1px solid #f1f2f3;
+    transition: 0.5s;
+}
+
+.action > .grey:hover {
+    background-color: #932B28;
+    border: 1px solid #932B28;
+    color: #fff;
+}
+.action > .white {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #fff;
+    transition: 0.5s;
+}
+
+.action > .white:hover {
+    background-color: #932B28;
+    border: 1px solid #932B28;
+    color: #fff;
+}
+
+/* for snackbar style */
+
+#snackbar {
+  visibility: hidden;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {top: 10px; opacity: 0;} 
+  to {top: 0; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: 10px; opacity: 0;}
+  to {top: 0; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 0; opacity: 1;} 
+  to {top: 10px; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 0; opacity: 1;}
+  to {top: 10px; opacity: 0;}
+}
+
+/* for edit book style */
+.edit_section {
+    background-color: #f2f3f4;
+    padding: 16px;
+    margin-top: 8px;
+}
+
+.edit_section > h2 {
+    text-align: center;
+}
+
+.edit_section > form > .input {
+    margin: 16px 0;
+}
+
+.edit_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: 0;
+    background-color: #fff;
+    margin-bottom: 16px;
+}
